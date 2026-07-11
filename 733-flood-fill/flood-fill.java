@@ -34,6 +34,6 @@ class Solution {
         if(sc<image[0].length-1){
             fill(arr,image,sr,sc+1,color,original);
         }
-       arr[sr][sc]=false;
+      
     }
 }
