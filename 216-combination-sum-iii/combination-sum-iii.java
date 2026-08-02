@@ -15,13 +15,13 @@ class Solution {
         if(list2.size()==k&&target==0){
             list1.add(new ArrayList<>(list2));
         }
-        //List<Integer> list=new ArrayList<>();
+       
         for(int y=i;y<arr.length;y++){
             list2.add(arr[y]);
             add(list1,list2,k,target-arr[y],arr,y+1);
             list2.remove(list2.size()-1);
 
 }
-        //list2.remove(list2.size()-1);
+       
     }
 }
