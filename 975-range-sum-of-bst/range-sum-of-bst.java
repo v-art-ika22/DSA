@@ -25,10 +25,10 @@ class Solution {
                 ans+=node.val;
             }
             if(node.val>L){
-                rangeSumBST(node.left,L,R);
+                dfs(node.left,L,R);
             }
             if(node.val<R){
-                rangeSumBST(node.right,L,R);
+                dfs(node.right,L,R);
             }
         }
     }
